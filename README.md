@@ -152,7 +152,7 @@ Contributions are welcome! Please open an issue or submit a pull request for imp
 
 - [Mitul K M](https://github.com/switchtwitch12345)
 - [Aadit Pani](https://github.com/AaditPani-RVU)
-- Manya Jain
+- [Manya Jain](https://github.com/Manyajain2435)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
