@@ -1,0 +1,24 @@
+# Core ML and Vision Libraries
+torch
+torchvision
+transformers
+accelerate
+
+# Image Enhancement
+realesrgan
+basicsr
+
+# Translation
+argostranslate
+
+# Online Reporting
+discord.py
+
+# Terminal UI
+inquirer
+
+# Utilities
+requests
+numpy
+Pillow
+python-dotenv
