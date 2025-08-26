@@ -79,7 +79,7 @@ C4PS/
 
 ### 1. Clone the Repository
 ```powershell
-git clone https://github.com/yourusername/C4PS.git
+git clone https://github.com/TheRevanite/C4PS.git
 cd C4PS
 ```
 
@@ -99,6 +99,7 @@ Create a `.env` file in the root directory:
 ```env
 DISCORD_WEBHOOK_URL="your_discord_webhook_url_here"
 DISCORD_SERVER_INVITE="your_discord_server_invite_here"
+IMAGE_URL="your_image_link_here"
 ```
 
 ## How to Run
@@ -134,7 +135,6 @@ All key parameters are set in `utils/config.py`:
 - [x] Discord webhook integration
 - [x] Interactive terminal UI
 - [ ] Add more language support
-- [ ] Web dashboard for results
 - [ ] REST API for external integration
 - [ ] Edge device optimization
 
