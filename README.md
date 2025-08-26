@@ -9,7 +9,7 @@
 [![NumPy](https://img.shields.io/badge/NumPy-Scientific-013243.svg)](https://numpy.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-> An agentic pipeline for image enhancement, captioning, and multilingual translation, designed for social media automation and reporting.
+> A pipeline for image enhancement, captioning, and multilingual translation, designed for social media automation and reporting.
 
 ## Table of Contents
 - [Overview](#overview)
