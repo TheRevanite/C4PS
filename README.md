@@ -9,126 +9,187 @@
 [![NumPy](https://img.shields.io/badge/NumPy-Scientific-013243.svg)](https://numpy.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-> A pipeline for image enhancement, captioning, and multilingual translation, designed for social media automation and reporting.
 
-## Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Setup and Installation](#setup-and-installation)
-- [How to Run](#how-to-run)
-- [Configuration](#configuration)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+> A modular pipeline for image enhancement, caption generation, and offline multilingual translation. Designed to be used locally (no training required) with optional Discord reporting.
 
-## Overview
-C4PS is a modular Python system for automated image enhancement, caption generation, and translation. It leverages state-of-the-art models for image super-resolution (Real-ESRGAN), transformer-based captioning, and offline translation (Argos Translate), with optional Discord integration for online reporting.
+## Table of contents
 
-The pipeline is designed for content creators, researchers, and social media managers who need high-quality, multilingual image captions and reporting, all without the need for model training or cloud APIs.
+- Overview
+- Key features
+- Tech stack
+- Project layout (updated)
+- Available scripts and utilities (new)
+- Assets & weights (updated)
+- Setup & installation
+- How to run (examples)
+- Configuration
+- Roadmap
+- Contributing
+- License
 
-## Key Features
-- **Image Enhancement**: Upscales and improves image quality using Real-ESRGAN
-- **Automated Captioning**: Generates descriptive captions using a pre-trained transformer model
-- **Offline Multilingual Translation**: Translates captions into multiple languages using Argos Translate
-- **Discord Integration**: Sends results to Discord via webhooks for online sharing
-- **Terminal UI**: Interactive and color-coded terminal interface for local reporting
-- **Configurable Pipeline**: Easily adjust target languages, model paths, and output modes
-- **No Training Required**: Uses pre-trained models for all tasks
+C## Overview
+C4PS is a local pipeline that performs image enhancement (Real-ESRGAN), caption generation (transformer-based model), and offline translation (Argos Translate). It also includes small utilities and scripts for comparisons, weight conversion, and sweep/benchmarking.
 
-## Tech Stack
-- **Python 3.12+**
-- **PyTorch**: Deep learning framework
-- **Transformers (Hugging Face)**: Captioning model
-- **Real-ESRGAN**: Image enhancement
-- **Argos Translate**: Offline translation
-- **NumPy, Pillow**: Image and array manipulation
-- **Discord.py**: Online reporting
-- **Inquirer**: Terminal UI
-- **python-dotenv**: Environment variable management
+This README has been expanded to document scripts and files present in the repository that weren't previously listed.
 
-## Project Structure
-```
+## Key features
+
+- Image enhancement using Real-ESRGAN models
+- Caption generation via a pre-trained transformer model (cached locally)
+- Offline multilingual translation with Argos Translate
+- Optional Discord webhook reporting
+- Terminal UI for interactive runs
+- Utilities for model weight handling and comparisons
+
+## Tech stack
+
+- Python 3.12+
+- PyTorch
+- Hugging Face Transformers (captioning)
+- Real-ESRGAN (image upscaling)
+- Argos Translate (offline translation)
+- NumPy, Pillow
+
+## Project layout (updated)
+
+This project contains additional scripts and folders that are now documented here. Top-level snapshot:
+
+```text
 C4PS/
-├── main.py                  # Main pipeline script
-├── requirements.txt         # Python dependencies
-├── README.md                # This file
-├── assets/                  # Downloaded images and assets
-├── weights/                 # Model weights and cache
-│   ├── transformer_model_cache # Captioning model files (microsoft/git-base-coco)
-│   └── RealESRGAN_x4plus.pth   # Real-ESRGAN model weights
-├── captioning/
-│   ├── generator.py         # Caption generation logic
-│   ├── model.py             # Loads transformer model
-│   └── vocabulary.py        # Vocabulary utilities
-├── enhancement/
-│   ├── enhancer.py          # Image enhancement logic
-│   └── model.py             # Loads Real-ESRGAN model
-├── translation/
-│   └── translator.py        # Offline translation logic (Argos Translate)
-├── utils/
-│   ├── config.py            # Central configuration
-│   ├── downloader.py        # Asset and model downloader
-│   ├── output_handler.py    # Discord and terminal reporting
-│   └── terminal_ui.py       # Terminal UI utilities
-└── .env                     # Discord webhook and secrets
+    ├── main.py                      # Main pipeline entrypoint
+    ├── choose_and_run.py            # Interactive chooser to run subsets of the pipeline
+    ├── compare_x4_x4plus.py         # Script to compare x4 vs x4plus ESRGAN outputs
+    ├── convert_weights.py           # Helper to convert or preprocess model weights
+    ├── sweep_enhancement.py         # Script to run enhancement sweeps/benchmarks
+    ├── sweep_results.csv            # Results produced by sweeps
+    ├── dummy.pth                    # Example / placeholder weight file (kept in repo)
+    ├── requirements.txt             # Python dependencies
+    ├── README.md                    # This file (updated)
+    ├── LICENSE
+    ├── assets/                      # Downloaded or example images
+    ├── outputs/                     # Pipeline outputs (images, captions, etc.)
+    ├── compare_outputs/             # Output comparisons generated by scripts
+    ├── captioning/                  # Captioning model loader and generator
+    │   ├── generator.py
+    │   └── model.py
+    ├── enhancement/                 # Real-ESRGAN wrapper and model loader
+    │   ├── enhancer.py
+    │   └── model.py
+    ├── translation/                 # Offline translation logic
+    │   └── translator.py
+    ├── utils/                       # Helpers and configuration
+    │   ├── config.py
+    │   ├── downloader.py
+    │   ├── output_handler.py
+    │   └── terminal_ui.py
+    ├── gfpgan/                      # GFPGAN-related files (detection/parsing weights)
+    │   └── weights/
+    │       ├── detection_Resnet50_Final.pth
+    │       └── parsing_parsenet.pth
+    └── weights/                      # ESRGAN + captioning caches
+        ├── GFPGANv1.4.pth
+        ├── RealESRGAN_x2.pth
+        ├── RealESRGAN_x2_chk.pth
+        ├── RealESRGAN_x4.pth
+        ├── RealESRGAN_x4_chk.pth
+        ├── RealESRGAN_x4plus.pth
+        └── transformer_model_cache/  # HuggingFace model cache (microsoft/git-base-coco)
 ```
 
-## Setup and Installation
+Notes:
 
-### 1. Clone the Repository
+- `dummy.pth` is a placeholder weight file included in the repository.
+- The `weights/transformer_model_cache` folder contains downloaded model files for the captioning transformer and may be large.
+
+## Available scripts and what they do
+
+- `main.py` — Main pipeline. Runs enhancement, captioning, translation, and outputs results.
+- `choose_and_run.py` — Interactive helper that lets you run parts of the pipeline (useful for testing or partial runs).
+- `compare_x4_x4plus.py` — Compare outputs produced by x4 and x4plus Real-ESRGAN weights.
+- `convert_weights.py` — Utility to convert or reformat weights for certain models (read source for supported conversions).
+- `sweep_enhancement.py` — Run enhancement parameter sweeps and produce `sweep_results.csv`.
+- `compare_outputs/` — Folder where comparison artifacts are saved when running comparison scripts.
+
+If you'd like a quick description of any script's CLI usage, open the top of the script (they usually include an argument parser or a short help message).
+
+## Assets & weights (what's in the repo)
+
+
+- weights/
+  - GFPGANv1.4.pth
+  - RealESRGAN_x2.pth, RealESRGAN_x2_chk.pth
+  - RealESRGAN_x4.pth, RealESRGAN_x4_chk.pth
+  - RealESRGAN_x4plus.pth
+  - transformer_model_cache/ (captioning model files cached under weights)
+
+- gfpgan/weights/
+  - detection_Resnet50_Final.pth
+  - parsing_parsenet.pth
+
+If you plan to re-download or update weights, check `utils/downloader.py` and `utils/config.py` for the default URLs and locations.
+
+## Setup and installation
+
+Follow the standard steps. Example on Windows PowerShell:
+
 ```powershell
 git clone https://github.com/TheRevanite/C4PS.git
 cd C4PS
-```
-
-### 2. (Optional) Create a Virtual Environment
-```powershell
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3. Install Dependencies
-```powershell
+# optional virtual env
+python -m venv venv; .\venv\Scripts\Activate
 pip install -r requirements.txt
 ```
 
-### 4. Configure Discord Webhook (Optional)
-Create a `.env` file in the root directory:
+Note: the captioning model cache can be large. Make sure you have enough disk space before running the pipeline the first time.
+
+## How to run (examples)
+
+- Full pipeline (default behavior):
+
+```powershell
+python main.py
+```
+
+- Use the interactive helper to choose parts of the pipeline:
+
+```powershell
+python choose_and_run.py
+```
+
+- Run a sweep/benchmark for enhancement:
+
+```powershell
+python sweep_enhancement.py
+```
+
+- Compare ESRGAN variants:
+
+```powershell
+python compare_x4_x4plus.py
+```
+
+The scripts usually accept additional CLI options; inspect the top of each script or run them with `-h` / `--help`.
+
+## Configuration
+
+Central configuration lives in `utils/config.py`. Typical items to set or override:
+
+- `IMAGE_URL` — sample image URL used by downloader (or set via `.env`)
+- `ENHANCER_WEIGHTS_URL` — default download URL(s) for Real-ESRGAN
+- `TARGET_LANGUAGES` — list of languages for translation
+- `CAPTIONING_MODEL_PATH` — local path to captioning model cache
+- `DISCORD_WEBHOOK_URL` — if set, the pipeline can post results to Discord
+
+Environment variables and secrets (optional) can be placed in a `.env` file at project root. Example keys used by the repo:
+
 ```env
 DISCORD_WEBHOOK_URL="your_discord_webhook_url_here"
 DISCORD_SERVER_INVITE="your_discord_server_invite_here"
 IMAGE_URL="your_image_link_here"
 ```
 
-## How to Run
-
-Run the main pipeline script:
-```powershell
-python main.py
-```
-
-The application will:
-1. Download required assets and models
-2. Enhance the input image
-3. Generate an English caption
-4. Translate the caption into multiple languages (offline)
-5. Output results to Discord (online mode) or display in terminal (offline mode)
-
-## Configuration
-
-All key parameters are set in `utils/config.py`:
-
-| Parameter                | Description                                 | Default Value                |
-|--------------------------|---------------------------------------------|------------------------------|
-| `IMAGE_URL`              | URL for sample image download               | Set in .env                 |
-| `ENHANCER_WEIGHTS_URL`   | Real-ESRGAN weights download URL            | Provided in config.py        |
-| `TARGET_LANGUAGES`       | Languages for translation                   | `[fr, es, de]`               |
-| `CAPTIONING_MODEL_PATH`  | Local cache for captioning model            | `weights/transformer_model_cache` |
-| `DISCORD_WEBHOOK_URL`    | Discord webhook for online reporting        | Set in .env                  |
-
 ## Roadmap
+
 - [x] Image enhancement with Real-ESRGAN
 - [x] Transformer-based captioning
 - [x] Offline multilingual translation
@@ -139,24 +200,24 @@ All key parameters are set in `utils/config.py`:
 - [ ] Edge device optimization
 
 ## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for improvements or new features.
+
+Please open an issue or submit a PR. Typical workflow:
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a pull request
+2. Create a feature branch (`git checkout -b feature/name`)
+3. Implement changes and add tests where possible
+4. Run the pipeline locally to verify behavior
+5. Push and open a PR
 
+## Files changed in this update
 
-## Contributors
+- `README.md` — expanded project layout, documented additional scripts, weights, and usage examples.
 
-- [Mitul K M](https://github.com/switchtwitch12345)
-- [Aadit Pani](https://github.com/AaditPani-RVU)
-- [Manya Jain](https://github.com/Manyajain2435)
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ---
 
-**Made with care for intelligent content creation and sharing.**
+**Updated to reflect additional scripts, weight files, and folders present in the repository.**

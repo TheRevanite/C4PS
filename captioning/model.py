@@ -17,7 +17,8 @@ def create_transformer_model(device):
     
     processor = AutoProcessor.from_pretrained(
         model_name, 
-        cache_dir=config.CAPTIONING_MODEL_PATH
+        cache_dir=config.CAPTIONING_MODEL_PATH,
+        use_fast=True  # <-- THIS IS THE FIX
     )
     
     model = AutoModelForCausalLM.from_pretrained(

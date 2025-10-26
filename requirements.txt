@@ -4,21 +4,31 @@ torchvision
 transformers
 accelerate
 
-# Image Enhancement
+# Image Enhancement (Main)
 realesrgan
 basicsr
 
+# Image Enhancement (Face - Optional)
+gfpgan
+
+# Object Detection (for Vehicle Optimization)
+ultralytics
+
 # Translation
-argostranslate
+argostranslate # We used this in the code examples, not argostranslate
 
 # Online Reporting
-discord.py
+discord.py # If using the full library, otherwise 'requests' is sufficient for webhooks
 
 # Terminal UI
 inquirer
+tqdm # Added for progress bars
 
 # Utilities
 requests
 numpy
 Pillow
 python-dotenv
+opencv-python # Added for color conversion (needed by manual GFPGAN)
+psutil # Added for memory checks
+scikit-image # Added for potential image quality metrics (used in debug logs)
