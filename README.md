@@ -59,9 +59,8 @@ C4PS/
     ├── convert_weights.py           # Helper to convert or preprocess model weights
     ├── sweep_enhancement.py         # Script to run enhancement sweeps/benchmarks
     ├── sweep_results.csv            # Results produced by sweeps
-    ├── dummy.pth                    # Example / placeholder weight file (kept in repo)
     ├── requirements.txt             # Python dependencies
-    ├── README.md                    # This file (updated)
+    ├── README.md                    # This file
     ├── LICENSE
     ├── assets/                      # Downloaded or example images
     ├── outputs/                     # Pipeline outputs (images, captions, etc.)
@@ -94,8 +93,6 @@ C4PS/
 ```
 
 Notes:
-
-- `dummy.pth` is a placeholder weight file included in the repository.
 - The `weights/transformer_model_cache` folder contains downloaded model files for the captioning transformer and may be large.
 
 ## Available scripts and what they do
