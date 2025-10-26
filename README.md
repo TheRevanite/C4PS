@@ -17,9 +17,9 @@
 - Overview
 - Key features
 - Tech stack
-- Project layout (updated)
-- Available scripts and utilities (new)
-- Assets & weights (updated)
+- Project layout
+- Available scripts and utilities
+- Assets & weights
 - Setup & installation
 - How to run (examples)
 - Configuration
@@ -27,10 +27,8 @@
 - Contributing
 - License
 
-C## Overview
+## Overview
 C4PS is a local pipeline that performs image enhancement (Real-ESRGAN), caption generation (transformer-based model), and offline translation (Argos Translate). It also includes small utilities and scripts for comparisons, weight conversion, and sweep/benchmarking.
-
-This README has been expanded to document scripts and files present in the repository that weren't previously listed.
 
 ## Key features
 
@@ -50,9 +48,8 @@ This README has been expanded to document scripts and files present in the repos
 - Argos Translate (offline translation)
 - NumPy, Pillow
 
-## Project layout (updated)
-
-This project contains additional scripts and folders that are now documented here. Top-level snapshot:
+## Project layout
+Top-level snapshot:
 
 ```text
 C4PS/
@@ -209,15 +206,6 @@ Please open an issue or submit a PR. Typical workflow:
 4. Run the pipeline locally to verify behavior
 5. Push and open a PR
 
-## Files changed in this update
-
-- `README.md` — expanded project layout, documented additional scripts, weights, and usage examples.
-
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
----
-
-**Updated to reflect additional scripts, weight files, and folders present in the repository.**
