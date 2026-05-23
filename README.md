@@ -183,7 +183,7 @@ C4PS/
 
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/TheRevanite/C4PS.git
+git clone https://github.com/meghmavani/C4PS.git
 cd C4PS
 python -m venv venv
 .\venv\Scripts\Activate
@@ -191,7 +191,7 @@ python -m venv venv
 
 **macOS/Linux (Bash):**
 ```bash
-git clone https://github.com/TheRevanite/C4PS.git
+git clone https://github.com/meghmavani/C4PS.git
 cd C4PS
 python3 -m venv venv
 source venv/bin/activate
