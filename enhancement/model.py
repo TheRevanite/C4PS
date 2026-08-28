@@ -31,6 +31,11 @@ except ImportError as e:
 
 # Reduce thread usage to lower memory pressure
 os.environ.setdefault('OMP_NUM_THREADS', '1')
+# Reduces allocator fragmentation (the RealESRGAN-then-GFPGAN sequence on a
+# small-VRAM GPU was observed to OOM even when the two stages' peak
+# allocations individually fit -- fragmentation from PyTorch's caching
+# allocator was part of that). Suggested directly in the CUDA OOM error text.
+os.environ.setdefault('PYTORCH_CUDA_ALLOC_CONF', 'expandable_segments:True')
 try:
     torch.set_num_threads(1)
     torch.set_num_interop_threads(1)
@@ -103,10 +108,21 @@ class EnhancementModel:
                             os.path.expanduser('~'), '.cache/gfpgan'
                         )
 
-                        # <-- UPDATED GFPGANer CALL (removed post_process)
+                        # upscale=1, NOT outscale: GFPGANer.enhance() is always called
+                        # below on RealESRGAN's *already* outscale-upscaled output, not
+                        # the original low-res image. GFPGANer's FaceRestoreHelper
+                        # multiplies whatever image it's given by `upscale` again when
+                        # pasting restored faces back (facexlib's
+                        # paste_faces_to_input_image: h_up = h * upscale_factor). Passing
+                        # outscale here compounded to an outscale**2 total blow-up (e.g.
+                        # 4x RealESRGAN * 4x GFPGAN = 16x linear / 256x pixel count),
+                        # which is what was actually driving the CUDA OOM crashes on
+                        # >=1024px inputs, not (only) allocator fragmentation. The
+                        # background is already at the target resolution by this point,
+                        # so GFPGAN should paste faces back at 1x.
                         self.face_enhancer = GFPGANer(
                             model_path=gfpgan_path,
-                            upscale=outscale,
+                            upscale=1,
                             arch='clean',
                             channel_multiplier=2,
                             bg_upsampler=None,
@@ -203,6 +219,20 @@ class EnhancementModel:
 
         # --- STEP 2: GFPGAN Face Enhancement (if enabled) ---
         if self.do_face_enhance and self.face_enhancer is not None:
+            # RealESRGAN's tiled upsampler can leave several GiB of cached
+            # (but unused) CUDA allocations behind after enhance() returns --
+            # PyTorch's caching allocator holds them for reuse rather than
+            # releasing them to the driver. GFPGAN's face detector+restorer
+            # then needs its own multi-hundred-MB allocations on top of that
+            # on a GPU with only ~3.8GB total, which was observed to OOM the
+            # whole worker process (empirically, at 1024px with tile<=256).
+            # Freeing the cache here gives GFPGAN the headroom RealESRGAN no
+            # longer needs.
+            import gc
+            gc.collect()
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+
             start_gfpgan = time.time()
             try:
                 _, _, output = self.face_enhancer.enhance(
@@ -213,6 +243,21 @@ class EnhancementModel:
                 )
                 elapsed_gfpgan = time.time() - start_gfpgan
                 print(f"[BENCHMARK] GFPGAN face enhancement took {elapsed_gfpgan:.3f} seconds.")
+            except (RuntimeError, MemoryError) as e:
+                print(f"[WARNING] GFPGAN enhancement failed ({e}); retrying once after freeing GPU cache.")
+                gc.collect()
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+                try:
+                    _, _, output = self.face_enhancer.enhance(
+                        output,
+                        has_aligned=False,
+                        only_center_face=False,
+                        paste_back=True
+                    )
+                    print("[INFO] GFPGAN retry succeeded.")
+                except Exception as e2:
+                    print(f"[ERROR] GFPGAN enhancement failed after retry: {e2}. Returning RealESRGAN result.")
             except Exception as e:
                 print(f"[ERROR] GFPGAN enhancement failed: {e}. Returning RealESRGAN result.")
 

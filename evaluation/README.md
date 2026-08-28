@@ -41,16 +41,44 @@ anything the paper says about image quality.
    "4 distinct enhancement modes" was true of the UI, not of the model
    actually run for 2 of the 4 choices.
 
+3. **`enhancement/model.py`: face-enhance mode double-upscaled the image,
+   causing the CUDA OOM crashes this run's `runtime_raw.csv` originally
+   recorded at 1024px with tile<=256.** `GFPGANer` was constructed with
+   `upscale=outscale` (e.g. 4), but the image it's given is
+   `RealESRGANer`'s output, which has *already* been upscaled by `outscale`.
+   `GFPGANer`'s `FaceRestoreHelper.paste_faces_to_input_image` multiplies
+   whatever image it receives by `upscale_factor` again when pasting
+   restored faces back (confirmed by reading `facexlib`'s source), so the
+   two stages compounded to an `outscale**2` total blow-up -- a 681x1024
+   input at `outscale=4` came out 10896x16384 (16x linear / 256x pixels)
+   instead of the intended 2724x4096 (4x). That's what was actually
+   exhausting the 3.81GB GPU's memory at higher resolutions, not (only)
+   allocator fragmentation. Fixed by constructing `GFPGANer(upscale=1, ...)`
+   since its input is already at the target resolution; also added a
+   GPU-cache-clear between the RealESRGAN and GFPGAN stages as a secondary
+   mitigation. Re-running the full `benchmark_runtime.py` sweep after the
+   fix: all 45 (mode, resolution, tile) configs now complete 15/15 repeats
+   with zero crashes, including the two configs that crashed 3/6 times
+   before. `general_x4plus_gfpgan` is also now correctly ~4-5x faster in
+   its GFPGAN stage (was doing 16x the pixel work it needed to).
+
 Run once, in this order, from the `C4PS/` repo root with the venv active:
 
 ```bash
 source .venv/bin/activate
-python -m evaluation.record_environment                 # setup/versions table
-python -m evaluation.evaluate_captioning --n-samples 100 # captioning quality + adaptive-pipeline evidence
-python -m evaluation.evaluate_enhancement --n-samples 20 # enhancement quality vs ground truth
-python -m evaluation.evaluate_translation --languages core --n-sentences 30
+python -m evaluation.record_environment                  # setup/versions table
+python -m evaluation.evaluate_captioning --n-samples 150 --no-resume  # captioning quality + adaptive-pipeline evidence
+python -m evaluation.evaluate_enhancement --n-samples 100 # enhancement quality vs ground truth
+python -m evaluation.evaluate_translation --languages core --n-sentences 80
 python -m evaluation.benchmark_runtime --n-images 5 --repeats 3
+python -m evaluation.significance                         # paired significance / CIs on top of the above
 ```
+
+Sample sizes were bumped from the first pass (captioning 60->150, enhancement
+20->100, translation 30->80/language) after `significance.py` showed the
+original n wasn't enough to distinguish several between-method captioning
+differences from noise -- see "Statistical significance" below before citing
+any specific method-vs-method captioning number.
 
 ## What each script produces
 
@@ -61,6 +89,30 @@ python -m evaluation.benchmark_runtime --n-images 5 --repeats 3
 | `evaluate_enhancement.py` | `enhancement_raw.csv`, `enhancement_metrics.csv` | #4, #5, #6 |
 | `evaluate_translation.py` | `translation_raw.csv`, `translation_metrics.csv` | #7, #8 |
 | `benchmark_runtime.py` | `runtime_raw.csv`, `runtime_summary.csv` | #9, #10, #11 |
+| `significance.py` | `enhancement_significance.csv`, `captioning_significance.csv`, `translation_ci.csv` | statistical backing for any table/claim above |
+
+## Statistical significance (read before citing a specific number)
+
+`*_metrics.csv` only report means -- not enough to tell whether two methods'
+scores are actually distinguishable given n in the dozens-to-low-hundreds and
+stds comparable in magnitude to the between-method gaps. `significance.py`
+adds paired Wilcoxon signed-rank + paired t-test + a 10000-resample bootstrap
+95% CI on the mean paired difference (enhancement modes vs `bicubic` at
+matching scale; captioning modes vs `original`), and a bootstrap 95% CI on
+each translation corpus metric.
+
+At n=100/150/80 (enhancement/captioning/translation): every enhancement
+mode's PSNR/SSIM/LPIPS difference from bicubic is significant (expected --
+see the perception-distortion tradeoff note above). For captioning, only one
+difference clears significance: `sharp_anime_x4` has significantly *lower*
+ROUGE-L than `original` (diff=-0.0204, 95% CI=[-0.0385,-0.0027]). Every other
+captioning mode-vs-original difference across BLEU-4/METEOR/ROUGE-L
+(including both `general_x4plus`/`auto_vehicle_x4` readings, which are
+identical since they're the same underlying model) has a 95% CI crossing
+zero -- i.e. not distinguishable from noise at this sample size. **Do not
+cite "enhancement mode X improves captioning" as a finding**; the honest
+claim is "enhancement doesn't measurably hurt captioning (with one exception:
+sharp_anime_x4 on ROUGE-L)," not that it helps.
 
 ## Methodology notes (read before quoting numbers in the paper)
 
@@ -94,8 +146,14 @@ python -m evaluation.benchmark_runtime --n-images 5 --repeats 3
   timed-out or OOM'd config is recorded as such in `runtime_raw.csv`
   rather than silently dropped, which is itself informative about which
   configs are actually usable on constrained hardware (this dev box: GTX
-  1650, 4GB VRAM -- expect `general_x4plus` at 1920px to be marginal or to
-  fail depending on tile size; that's a real result, not a bug).
+  1650, 3.81GB VRAM). After the double-upscale fix (bug #3 above), the full
+  45-config sweep completes 15/15 repeats with zero crashes, including
+  `general_x4plus_gfpgan` at every resolution/tile combo -- the earlier
+  crashes at 1024px/tile<=256 were the bug, not an inherent hardware limit.
+  A single-image edge case at 1920px can still OOM within GFPGAN's own face
+  restoration (unrelated to the fixed bug -- some real faces just need more
+  memory than others to align/restore); this now degrades gracefully to the
+  RealESRGAN-only result instead of crashing the process.
 
 ## What this suite deliberately does NOT do
 

@@ -1,7 +1,7 @@
 {
   "source": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz",
   "split": "devtest",
-  "n_sentences": 30,
+  "n_sentences": 80,
   "languages": [
     "hi",
     "kn",
