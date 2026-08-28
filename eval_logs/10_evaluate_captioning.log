@@ -1,0 +1,2280 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+[captioning] device=cuda
+[DEBUG] Attempting to import GFPGAN...
+[DEBUG] GFPGAN imported successfully!
+Loading weights:   0%|          | 0/305 [00:00<?, ?it/s]Loading weights: 100%|██████████| 305/305 [00:00<00:00, 23623.12it/s]
+[dataset] Trying Flickr8k source: jxie/flickr8k
+[dataset] Loaded jxie/flickr8k[test] with 1000 rows, columns=['image', 'caption_0', 'caption_1', 'caption_2', 'caption_3', 'caption_4']
+[dataset] Using 60 Flickr8k samples from jxie/flickr8k[test]
+[captioning] (1/60) jxie_flickr8k_776
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.660 seconds.
+[BENCHMARK] Total enhancement took 0.660 seconds.
+    fast_x2: "a man riding a dirt bike on a dirt track." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.871 seconds.
+[BENCHMARK] Total enhancement took 0.871 seconds.
+    sharp_anime_x4: "a man riding a motorcycle on a dirt track." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.522 seconds.
+[BENCHMARK] Total enhancement took 2.522 seconds.
+    general_x4plus: "a man riding a dirt bike on a dirt road." (3.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.525 seconds.
+[BENCHMARK] Total enhancement took 2.525 seconds.
+    auto_vehicle_x4: "a man riding a dirt bike on a dirt road." (3.1s)
+[captioning] (2/60) jxie_flickr8k_507
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.642 seconds.
+[BENCHMARK] Total enhancement took 0.642 seconds.
+    fast_x2: "a boat on a lake" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.849 seconds.
+[BENCHMARK] Total enhancement took 0.849 seconds.
+    sharp_anime_x4: "a boat on a misty lake" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.515 seconds.
+[BENCHMARK] Total enhancement took 2.515 seconds.
+    general_x4plus: "a boat on a misty lake" (3.0s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.519 seconds.
+[BENCHMARK] Total enhancement took 2.519 seconds.
+    auto_vehicle_x4: "a boat on a misty lake" (3.1s)
+[captioning] (3/60) jxie_flickr8k_895
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (307, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.607 seconds.
+[BENCHMARK] Total enhancement took 0.607 seconds.
+    fast_x2: "a boy on a skateboard doing a trick on a bench." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (307, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.791 seconds.
+[BENCHMARK] Total enhancement took 0.791 seconds.
+    sharp_anime_x4: "a boy on a skateboard doing a trick on a bench." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (307, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.348 seconds.
+[BENCHMARK] Total enhancement took 2.348 seconds.
+    general_x4plus: "a boy skateboarding on a bench." (2.9s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (307, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.344 seconds.
+[BENCHMARK] Total enhancement took 2.344 seconds.
+    auto_vehicle_x4: "a boy skateboarding on a bench." (3.0s)
+[captioning] (4/60) jxie_flickr8k_922
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.641 seconds.
+[BENCHMARK] Total enhancement took 0.641 seconds.
+    fast_x2: "a woman playing an acoustic guitar." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.856 seconds.
+[BENCHMARK] Total enhancement took 0.856 seconds.
+    sharp_anime_x4: "a woman playing an acoustic guitar." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.523 seconds.
+[BENCHMARK] Total enhancement took 2.523 seconds.
+    general_x4plus: "a woman playing an acoustic guitar." (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.521 seconds.
+[BENCHMARK] Total enhancement took 2.521 seconds.
+    auto_vehicle_x4: "a woman playing an acoustic guitar." (3.1s)
+[captioning] (5/60) jxie_flickr8k_33
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (347, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.678 seconds.
+[BENCHMARK] Total enhancement took 0.678 seconds.
+    fast_x2: "a person on a water skis in a lake." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (347, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.899 seconds.
+[BENCHMARK] Total enhancement took 0.899 seconds.
+    sharp_anime_x4: "a person parasailing in the water" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (347, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.648 seconds.
+[BENCHMARK] Total enhancement took 2.648 seconds.
+    general_x4plus: "a person in a parachute water kite" (3.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (347, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.651 seconds.
+[BENCHMARK] Total enhancement took 2.651 seconds.
+    auto_vehicle_x4: "a person in a parachute water kite" (3.2s)
+[captioning] (6/60) jxie_flickr8k_483
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 480, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 0.982 seconds.
+[BENCHMARK] Total enhancement took 0.982 seconds.
+    fast_x2: "a dog on a red door." (1.5s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 480, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 1.344 seconds.
+[BENCHMARK] Total enhancement took 1.344 seconds.
+    sharp_anime_x4: "a dog on a red door." (1.6s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 480, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 3.877 seconds.
+[BENCHMARK] Total enhancement took 3.877 seconds.
+    general_x4plus: "a dog on a red door." (4.5s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 480, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 3.860 seconds.
+[BENCHMARK] Total enhancement took 3.860 seconds.
+    auto_vehicle_x4: "a dog on a red door." (4.4s)
+[captioning] (7/60) jxie_flickr8k_85
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 323, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.652 seconds.
+[BENCHMARK] Total enhancement took 0.652 seconds.
+    fast_x2: "a woman sitting on a wall with a purse." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 323, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.847 seconds.
+[BENCHMARK] Total enhancement took 0.847 seconds.
+    sharp_anime_x4: "a woman sitting on a wall with a purse." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 323, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.514 seconds.
+[BENCHMARK] Total enhancement took 2.514 seconds.
+    general_x4plus: "a young woman sitting on a wall, holding a purse and looking at her phone." (3.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 323, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.510 seconds.
+[BENCHMARK] Total enhancement took 2.510 seconds.
+    auto_vehicle_x4: "a young woman sitting on a wall, holding a purse and looking at her phone." (3.2s)
+[captioning] (8/60) jxie_flickr8k_750
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (352, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.687 seconds.
+[BENCHMARK] Total enhancement took 0.687 seconds.
+    fast_x2: "a snowboarder is doing a trick on a ramp on a hill." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (352, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.901 seconds.
+[BENCHMARK] Total enhancement took 0.901 seconds.
+    sharp_anime_x4: "a group of people snowboarding on a hill." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (352, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.674 seconds.
+[BENCHMARK] Total enhancement took 2.674 seconds.
+    general_x4plus: "a snowboarder is doing a trick on a ramp on a hill." (3.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (352, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.681 seconds.
+[BENCHMARK] Total enhancement took 2.681 seconds.
+    auto_vehicle_x4: "a snowboarder is doing a trick on a ramp on a hill." (3.3s)
+[captioning] (9/60) jxie_flickr8k_354
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (281, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.560 seconds.
+[BENCHMARK] Total enhancement took 0.560 seconds.
+    fast_x2: "three dogs playing in the snow." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (281, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.731 seconds.
+[BENCHMARK] Total enhancement took 0.731 seconds.
+    sharp_anime_x4: "three dogs playing in the snow." (1.0s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (281, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.165 seconds.
+[BENCHMARK] Total enhancement took 2.165 seconds.
+    general_x4plus: "three dogs playing in the snow." (2.7s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (281, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.167 seconds.
+[BENCHMARK] Total enhancement took 2.167 seconds.
+    auto_vehicle_x4: "three dogs playing in the snow." (2.7s)
+[captioning] (10/60) jxie_flickr8k_523
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 333, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.659 seconds.
+[BENCHMARK] Total enhancement took 0.659 seconds.
+    fast_x2: "a snowboarder in a black jacket and blue pants is doing a trick on a snowboard trick." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 333, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.860 seconds.
+[BENCHMARK] Total enhancement took 0.860 seconds.
+    sharp_anime_x4: "a snowboarder in a black jacket and blue pants is doing a trick on a yellow snowboard" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 333, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.543 seconds.
+[BENCHMARK] Total enhancement took 2.543 seconds.
+    general_x4plus: "a snowboarder is doing a trick on the snowboard on the snow." (3.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 333, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.541 seconds.
+[BENCHMARK] Total enhancement took 2.541 seconds.
+    auto_vehicle_x4: "a snowboarder is doing a trick on the snowboard on the snow." (3.1s)
+[captioning] (11/60) jxie_flickr8k_184
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (400, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.776 seconds.
+[BENCHMARK] Total enhancement took 0.776 seconds.
+    fast_x2: "a couple of cyclists ride their bikes along the beach at sunset." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (400, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 1.035 seconds.
+[BENCHMARK] Total enhancement took 1.035 seconds.
+    sharp_anime_x4: "a couple of cyclists ride their bikes along the beach at sunset." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (400, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 3.035 seconds.
+[BENCHMARK] Total enhancement took 3.035 seconds.
+    general_x4plus: "a couple of cyclists ride their bikes along the beach at sunset." (3.6s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (400, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 3.035 seconds.
+[BENCHMARK] Total enhancement took 3.035 seconds.
+    auto_vehicle_x4: "a couple of cyclists ride their bikes along the beach at sunset." (3.7s)
+[captioning] (12/60) jxie_flickr8k_809
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.642 seconds.
+[BENCHMARK] Total enhancement took 0.642 seconds.
+    fast_x2: "a dog running in the woods." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.854 seconds.
+[BENCHMARK] Total enhancement took 0.854 seconds.
+    sharp_anime_x4: "a dog running in the woods." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.535 seconds.
+[BENCHMARK] Total enhancement took 2.535 seconds.
+    general_x4plus: "a dog running in the woods." (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.534 seconds.
+[BENCHMARK] Total enhancement took 2.534 seconds.
+    auto_vehicle_x4: "a dog running in the woods." (3.1s)
+[captioning] (13/60) jxie_flickr8k_418
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.646 seconds.
+[BENCHMARK] Total enhancement took 0.646 seconds.
+    fast_x2: "a greyhound in a racing gear" (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.859 seconds.
+[BENCHMARK] Total enhancement took 0.859 seconds.
+    sharp_anime_x4: "a greyhound in a race." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.537 seconds.
+[BENCHMARK] Total enhancement took 2.537 seconds.
+    general_x4plus: "a greyhound in a racing gear" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.544 seconds.
+[BENCHMARK] Total enhancement took 2.544 seconds.
+    auto_vehicle_x4: "a greyhound in a racing gear" (3.1s)
+[captioning] (14/60) jxie_flickr8k_615
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.739 seconds.
+[BENCHMARK] Total enhancement took 0.739 seconds.
+    fast_x2: "a group of women in pink dresses crossing the street." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.977 seconds.
+[BENCHMARK] Total enhancement took 0.977 seconds.
+    sharp_anime_x4: "a group of women in pink dresses walking across a street." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.859 seconds.
+[BENCHMARK] Total enhancement took 2.859 seconds.
+    general_x4plus: "a group of women in pink dresses walking across a street." (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.860 seconds.
+[BENCHMARK] Total enhancement took 2.860 seconds.
+    auto_vehicle_x4: "a group of women in pink dresses walking across a street." (3.4s)
+[captioning] (15/60) jxie_flickr8k_682
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.648 seconds.
+[BENCHMARK] Total enhancement took 0.648 seconds.
+    fast_x2: "a group of people on roller skateboards down a road." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.858 seconds.
+[BENCHMARK] Total enhancement took 0.858 seconds.
+    sharp_anime_x4: "a group of skaters racing down a road." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.539 seconds.
+[BENCHMARK] Total enhancement took 2.539 seconds.
+    general_x4plus: "a group of people on roller skateboards down a road." (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.540 seconds.
+[BENCHMARK] Total enhancement took 2.540 seconds.
+    auto_vehicle_x4: "a group of people on roller skateboards down a road." (3.1s)
+[captioning] (16/60) jxie_flickr8k_501
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (391, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.774 seconds.
+[BENCHMARK] Total enhancement took 0.774 seconds.
+    fast_x2: "a snowboarder doing a trick on a jump" (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (391, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 1.020 seconds.
+[BENCHMARK] Total enhancement took 1.020 seconds.
+    sharp_anime_x4: "a snowboarder doing a trick on a jump" (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (391, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.981 seconds.
+[BENCHMARK] Total enhancement took 2.981 seconds.
+    general_x4plus: "a snowboarder doing a trick on a jump" (3.5s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (391, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.985 seconds.
+[BENCHMARK] Total enhancement took 2.985 seconds.
+    auto_vehicle_x4: "a snowboarder doing a trick on a jump" (3.6s)
+[captioning] (17/60) jxie_flickr8k_760
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 332, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.658 seconds.
+[BENCHMARK] Total enhancement took 0.659 seconds.
+    fast_x2: "little girl in a dress" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 332, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.856 seconds.
+[BENCHMARK] Total enhancement took 0.856 seconds.
+    sharp_anime_x4: "little girl in a dress" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 332, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.542 seconds.
+[BENCHMARK] Total enhancement took 2.542 seconds.
+    general_x4plus: "little girl in a dress" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 332, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.547 seconds.
+[BENCHMARK] Total enhancement took 2.547 seconds.
+    auto_vehicle_x4: "little girl in a dress" (3.1s)
+[captioning] (18/60) jxie_flickr8k_49
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 375, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.727 seconds.
+[BENCHMARK] Total enhancement took 0.727 seconds.
+    fast_x2: "a woman standing on a beach with her arms up in the air." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 375, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.978 seconds.
+[BENCHMARK] Total enhancement took 0.978 seconds.
+    sharp_anime_x4: "a person standing on a beach" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 375, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.898 seconds.
+[BENCHMARK] Total enhancement took 2.898 seconds.
+    general_x4plus: "a person standing on a beach" (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 375, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.898 seconds.
+[BENCHMARK] Total enhancement took 2.898 seconds.
+    auto_vehicle_x4: "a person standing on a beach" (3.4s)
+[captioning] (19/60) jxie_flickr8k_732
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 333, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.657 seconds.
+[BENCHMARK] Total enhancement took 0.657 seconds.
+    fast_x2: "a dog jumping in the water" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 333, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.864 seconds.
+[BENCHMARK] Total enhancement took 0.864 seconds.
+    sharp_anime_x4: "a dog jumping in the water" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 333, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.547 seconds.
+[BENCHMARK] Total enhancement took 2.547 seconds.
+    general_x4plus: "a dog jumping in the water" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 333, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.552 seconds.
+[BENCHMARK] Total enhancement took 2.552 seconds.
+    auto_vehicle_x4: "a dog jumping in the water" (3.1s)
+[captioning] (20/60) jxie_flickr8k_336
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.645 seconds.
+[BENCHMARK] Total enhancement took 0.645 seconds.
+    fast_x2: "a woman taking a picture of a car" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.859 seconds.
+[BENCHMARK] Total enhancement took 0.859 seconds.
+    sharp_anime_x4: "a woman taking a picture of a car" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.548 seconds.
+[BENCHMARK] Total enhancement took 2.548 seconds.
+    general_x4plus: "a woman taking a picture of a car" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.547 seconds.
+[BENCHMARK] Total enhancement took 2.547 seconds.
+    auto_vehicle_x4: "a woman taking a picture of a car" (3.1s)
+[captioning] (21/60) jxie_flickr8k_450
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.737 seconds.
+[BENCHMARK] Total enhancement took 0.737 seconds.
+    fast_x2: "a young woman in a field of tall grass holding a yellow umbrella" (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.965 seconds.
+[BENCHMARK] Total enhancement took 0.965 seconds.
+    sharp_anime_x4: "a young woman in a field of tall grass holding a yellow umbrella" (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.860 seconds.
+[BENCHMARK] Total enhancement took 2.860 seconds.
+    general_x4plus: "a young woman in a field of tall grass holding a yellow umbrella" (3.5s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.863 seconds.
+[BENCHMARK] Total enhancement took 2.863 seconds.
+    auto_vehicle_x4: "a young woman in a field of tall grass holding a yellow umbrella" (3.5s)
+[captioning] (22/60) jxie_flickr8k_790
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (381, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.746 seconds.
+[BENCHMARK] Total enhancement took 0.746 seconds.
+    fast_x2: "three people standing outside a brick building." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (381, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.981 seconds.
+[BENCHMARK] Total enhancement took 0.981 seconds.
+    sharp_anime_x4: "students talk about the history of the city ' s history of the city ' s history." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (381, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.909 seconds.
+[BENCHMARK] Total enhancement took 2.909 seconds.
+    general_x4plus: "three people standing outside a brick building." (3.5s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (381, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.923 seconds.
+[BENCHMARK] Total enhancement took 2.923 seconds.
+    auto_vehicle_x4: "three people standing outside a brick building." (3.5s)
+[captioning] (23/60) jxie_flickr8k_350
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.738 seconds.
+[BENCHMARK] Total enhancement took 0.738 seconds.
+    fast_x2: "girl running on the beach" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.967 seconds.
+[BENCHMARK] Total enhancement took 0.967 seconds.
+    sharp_anime_x4: "a young girl running on the beach" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.864 seconds.
+[BENCHMARK] Total enhancement took 2.864 seconds.
+    general_x4plus: "a young girl running on the beach" (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.862 seconds.
+[BENCHMARK] Total enhancement took 2.862 seconds.
+    auto_vehicle_x4: "a young girl running on the beach" (3.4s)
+[captioning] (24/60) jxie_flickr8k_467
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.647 seconds.
+[BENCHMARK] Total enhancement took 0.647 seconds.
+    fast_x2: "a little boy playing with a water bottle in the park." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.860 seconds.
+[BENCHMARK] Total enhancement took 0.860 seconds.
+    sharp_anime_x4: "a young boy sitting under a tree" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.547 seconds.
+[BENCHMARK] Total enhancement took 2.547 seconds.
+    general_x4plus: "a young boy is standing under a tree." (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.544 seconds.
+[BENCHMARK] Total enhancement took 2.544 seconds.
+    auto_vehicle_x4: "a young boy is standing under a tree." (3.1s)
+[captioning] (25/60) jxie_flickr8k_622
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.647 seconds.
+[BENCHMARK] Total enhancement took 0.647 seconds.
+    fast_x2: "a man is working on a bull statue." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.855 seconds.
+[BENCHMARK] Total enhancement took 0.855 seconds.
+    sharp_anime_x4: "a man is looking at a sculpture of a bear." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.540 seconds.
+[BENCHMARK] Total enhancement took 2.540 seconds.
+    general_x4plus: "a man is looking at a sculpture of a bear." (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.544 seconds.
+[BENCHMARK] Total enhancement took 2.544 seconds.
+    auto_vehicle_x4: "a man is looking at a sculpture of a bear." (3.1s)
+[captioning] (26/60) jxie_flickr8k_476
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.646 seconds.
+[BENCHMARK] Total enhancement took 0.646 seconds.
+    fast_x2: "two dogs playing in a field." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.855 seconds.
+[BENCHMARK] Total enhancement took 0.855 seconds.
+    sharp_anime_x4: "dogs playing in a field" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.539 seconds.
+[BENCHMARK] Total enhancement took 2.539 seconds.
+    general_x4plus: "a dog and a dog playing in the grass" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.539 seconds.
+[BENCHMARK] Total enhancement took 2.539 seconds.
+    auto_vehicle_x4: "a dog and a dog playing in the grass" (3.1s)
+[captioning] (27/60) jxie_flickr8k_614
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.647 seconds.
+[BENCHMARK] Total enhancement took 0.647 seconds.
+    fast_x2: "two dogs playing with each other." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.859 seconds.
+[BENCHMARK] Total enhancement took 0.859 seconds.
+    sharp_anime_x4: "a dog and a dog standing up." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.544 seconds.
+[BENCHMARK] Total enhancement took 2.544 seconds.
+    general_x4plus: "two dogs playing with each other" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.547 seconds.
+[BENCHMARK] Total enhancement took 2.547 seconds.
+    auto_vehicle_x4: "two dogs playing with each other" (3.1s)
+[captioning] (28/60) jxie_flickr8k_554
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (354, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.707 seconds.
+[BENCHMARK] Total enhancement took 0.707 seconds.
+    fast_x2: "a man sits in a shop with his belongings in his hand." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (354, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.918 seconds.
+[BENCHMARK] Total enhancement took 0.918 seconds.
+    sharp_anime_x4: "a man sits at a table with a display of items." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (354, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.731 seconds.
+[BENCHMARK] Total enhancement took 2.731 seconds.
+    general_x4plus: "a man sits in a shop with his belongings in his hand." (3.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (354, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.728 seconds.
+[BENCHMARK] Total enhancement took 2.728 seconds.
+    auto_vehicle_x4: "a man sits in a shop with his belongings in his hand." (3.3s)
+[captioning] (29/60) jxie_flickr8k_365
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (441, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 0.932 seconds.
+[BENCHMARK] Total enhancement took 0.932 seconds.
+    fast_x2: "a boy on a swing set in a playground" (1.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (441, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 1.202 seconds.
+[BENCHMARK] Total enhancement took 1.202 seconds.
+    sharp_anime_x4: "a boy on a swing set in a playground" (1.5s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (441, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 3.561 seconds.
+[BENCHMARK] Total enhancement took 3.561 seconds.
+    general_x4plus: "a boy jumps over a slide at a playground." (4.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (441, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 3.562 seconds.
+[BENCHMARK] Total enhancement took 3.562 seconds.
+    auto_vehicle_x4: "a boy jumps over a slide at a playground." (4.1s)
+[captioning] (30/60) jxie_flickr8k_770
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (369, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.739 seconds.
+[BENCHMARK] Total enhancement took 0.739 seconds.
+    fast_x2: "a group of people posing for a picture with their dog." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (369, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.966 seconds.
+[BENCHMARK] Total enhancement took 0.966 seconds.
+    sharp_anime_x4: "a group of people posing for a picture with their dog." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (369, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.844 seconds.
+[BENCHMARK] Total enhancement took 2.844 seconds.
+    general_x4plus: "a group of people posing for a picture with their dog." (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (369, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.847 seconds.
+[BENCHMARK] Total enhancement took 2.847 seconds.
+    auto_vehicle_x4: "a group of people posing for a picture with their dog." (3.4s)
+[captioning] (31/60) jxie_flickr8k_630
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.648 seconds.
+[BENCHMARK] Total enhancement took 0.648 seconds.
+    fast_x2: "a woman and a child playing with a ball in the park." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.859 seconds.
+[BENCHMARK] Total enhancement took 0.859 seconds.
+    sharp_anime_x4: "a woman and a child playing with a ball in a park." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.544 seconds.
+[BENCHMARK] Total enhancement took 2.544 seconds.
+    general_x4plus: "a woman holding a child ' s hand while walking in a park." (3.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.551 seconds.
+[BENCHMARK] Total enhancement took 2.551 seconds.
+    auto_vehicle_x4: "a woman holding a child ' s hand while walking in a park." (3.1s)
+[captioning] (32/60) jxie_flickr8k_940
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (387, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.770 seconds.
+[BENCHMARK] Total enhancement took 0.770 seconds.
+    fast_x2: "children playing games at a bar" (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (387, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 1.010 seconds.
+[BENCHMARK] Total enhancement took 1.010 seconds.
+    sharp_anime_x4: "children playing games at a bar" (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (387, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.972 seconds.
+[BENCHMARK] Total enhancement took 2.972 seconds.
+    general_x4plus: "children playing games in a bar" (3.5s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (387, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.970 seconds.
+[BENCHMARK] Total enhancement took 2.970 seconds.
+    auto_vehicle_x4: "children playing games in a bar" (3.5s)
+[captioning] (33/60) jxie_flickr8k_797
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 375, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.725 seconds.
+[BENCHMARK] Total enhancement took 0.725 seconds.
+    fast_x2: "a girl in white" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 375, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.972 seconds.
+[BENCHMARK] Total enhancement took 0.972 seconds.
+    sharp_anime_x4: "a young girl practicing karate" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 375, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.894 seconds.
+[BENCHMARK] Total enhancement took 2.894 seconds.
+    general_x4plus: "a girl in white" (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 375, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.899 seconds.
+[BENCHMARK] Total enhancement took 2.899 seconds.
+    auto_vehicle_x4: "a girl in white" (3.4s)
+[captioning] (34/60) jxie_flickr8k_496
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.647 seconds.
+[BENCHMARK] Total enhancement took 0.647 seconds.
+    fast_x2: "a man holding binoculars to a camera." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.858 seconds.
+[BENCHMARK] Total enhancement took 0.858 seconds.
+    sharp_anime_x4: "a man holds binoculars to a camera while standing on a beach." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.543 seconds.
+[BENCHMARK] Total enhancement took 2.543 seconds.
+    general_x4plus: "a man holding binoculars while looking at the camera." (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.546 seconds.
+[BENCHMARK] Total enhancement took 2.546 seconds.
+    auto_vehicle_x4: "a man holding binoculars while looking at the camera." (3.1s)
+[captioning] (35/60) jxie_flickr8k_924
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.645 seconds.
+[BENCHMARK] Total enhancement took 0.645 seconds.
+    fast_x2: "a group of people playing soccer in a park." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.857 seconds.
+[BENCHMARK] Total enhancement took 0.857 seconds.
+    sharp_anime_x4: "a couple of people playing a game of golf" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.542 seconds.
+[BENCHMARK] Total enhancement took 2.542 seconds.
+    general_x4plus: "a tree in the background" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (332, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.543 seconds.
+[BENCHMARK] Total enhancement took 2.543 seconds.
+    auto_vehicle_x4: "a tree in the background" (3.1s)
+[captioning] (36/60) jxie_flickr8k_369
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.647 seconds.
+[BENCHMARK] Total enhancement took 0.647 seconds.
+    fast_x2: "a person riding a motorcycle on a track." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.859 seconds.
+[BENCHMARK] Total enhancement took 0.859 seconds.
+    sharp_anime_x4: "a person riding a motorcycle on a track." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.546 seconds.
+[BENCHMARK] Total enhancement took 2.546 seconds.
+    general_x4plus: "a person riding a motorcycle on a track." (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.550 seconds.
+[BENCHMARK] Total enhancement took 2.550 seconds.
+    auto_vehicle_x4: "a person riding a motorcycle on a track." (3.1s)
+[captioning] (37/60) jxie_flickr8k_596
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.647 seconds.
+[BENCHMARK] Total enhancement took 0.647 seconds.
+    fast_x2: "a dog swimming in a pool" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.857 seconds.
+[BENCHMARK] Total enhancement took 0.857 seconds.
+    sharp_anime_x4: "a dog swimming in a pool" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.546 seconds.
+[BENCHMARK] Total enhancement took 2.546 seconds.
+    general_x4plus: "a dog swimming in a pool" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.547 seconds.
+[BENCHMARK] Total enhancement took 2.547 seconds.
+    auto_vehicle_x4: "a dog swimming in a pool" (3.1s)
+[captioning] (38/60) jxie_flickr8k_720
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.649 seconds.
+[BENCHMARK] Total enhancement took 0.649 seconds.
+    fast_x2: "a person sitting on a bench" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.861 seconds.
+[BENCHMARK] Total enhancement took 0.861 seconds.
+    sharp_anime_x4: "a person sitting on a bench with a camera" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.545 seconds.
+[BENCHMARK] Total enhancement took 2.545 seconds.
+    general_x4plus: "a person sitting on a bench with a camera and a camera." (3.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.546 seconds.
+[BENCHMARK] Total enhancement took 2.546 seconds.
+    auto_vehicle_x4: "a person sitting on a bench with a camera and a camera." (3.1s)
+[captioning] (39/60) jxie_flickr8k_53
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 449, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 0.916 seconds.
+[BENCHMARK] Total enhancement took 0.916 seconds.
+    fast_x2: "two girls walking down the street" (1.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 449, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 1.224 seconds.
+[BENCHMARK] Total enhancement took 1.224 seconds.
+    sharp_anime_x4: "two girls walking down the street" (1.5s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 449, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 3.628 seconds.
+[BENCHMARK] Total enhancement took 3.628 seconds.
+    general_x4plus: "two girls walking down the street" (4.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 449, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 3.626 seconds.
+[BENCHMARK] Total enhancement took 3.626 seconds.
+    auto_vehicle_x4: "two girls walking down the street" (4.2s)
+[captioning] (40/60) jxie_flickr8k_426
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (404, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 0.851 seconds.
+[BENCHMARK] Total enhancement took 0.851 seconds.
+    fast_x2: "a young boy holding a water bottle." (1.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (404, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 1.087 seconds.
+[BENCHMARK] Total enhancement took 1.088 seconds.
+    sharp_anime_x4: "a young boy with a water bottle." (1.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (404, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 3.211 seconds.
+[BENCHMARK] Total enhancement took 3.211 seconds.
+    general_x4plus: "a young boy with a bottle of water." (3.8s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (404, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 3.218 seconds.
+[BENCHMARK] Total enhancement took 3.218 seconds.
+    auto_vehicle_x4: "a young boy with a bottle of water." (3.8s)
+[captioning] (41/60) jxie_flickr8k_56
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 334, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.656 seconds.
+[BENCHMARK] Total enhancement took 0.656 seconds.
+    fast_x2: "two boys playing in a park" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 334, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.862 seconds.
+[BENCHMARK] Total enhancement took 0.862 seconds.
+    sharp_anime_x4: "two boys playing in a park" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 334, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.558 seconds.
+[BENCHMARK] Total enhancement took 2.558 seconds.
+    general_x4plus: "two boys playing in a park" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 334, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.555 seconds.
+[BENCHMARK] Total enhancement took 2.555 seconds.
+    auto_vehicle_x4: "two boys playing in a park" (3.1s)
+[captioning] (42/60) jxie_flickr8k_264
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (286, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.567 seconds.
+[BENCHMARK] Total enhancement took 0.567 seconds.
+    fast_x2: "a person putting a pair of shoes on to a machine." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (286, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.743 seconds.
+[BENCHMARK] Total enhancement took 0.743 seconds.
+    sharp_anime_x4: "a man is putting a cup on a coffee machine." (1.0s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (286, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.192 seconds.
+[BENCHMARK] Total enhancement took 2.192 seconds.
+    general_x4plus: "a person putting a cup on a machine" (2.7s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (286, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.194 seconds.
+[BENCHMARK] Total enhancement took 2.194 seconds.
+    auto_vehicle_x4: "a person putting a cup on a machine" (2.7s)
+[captioning] (43/60) jxie_flickr8k_772
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.739 seconds.
+[BENCHMARK] Total enhancement took 0.739 seconds.
+    fast_x2: "a man and a dog walking across a frozen lake." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.964 seconds.
+[BENCHMARK] Total enhancement took 0.964 seconds.
+    sharp_anime_x4: "a man and a dog walking across a frozen lake." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.870 seconds.
+[BENCHMARK] Total enhancement took 2.870 seconds.
+    general_x4plus: "a man and a dog walking across a frozen pond." (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.868 seconds.
+[BENCHMARK] Total enhancement took 2.868 seconds.
+    auto_vehicle_x4: "a man and a dog walking across a frozen pond." (3.4s)
+[captioning] (44/60) jxie_flickr8k_185
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 334, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.658 seconds.
+[BENCHMARK] Total enhancement took 0.658 seconds.
+    fast_x2: "a boy playing in the rain" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 334, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.864 seconds.
+[BENCHMARK] Total enhancement took 0.864 seconds.
+    sharp_anime_x4: "a boy playing in the rain" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 334, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.554 seconds.
+[BENCHMARK] Total enhancement took 2.554 seconds.
+    general_x4plus: "a boy playing in the rain" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 334, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.558 seconds.
+[BENCHMARK] Total enhancement took 2.558 seconds.
+    auto_vehicle_x4: "a boy playing in the rain" (3.1s)
+[captioning] (45/60) jxie_flickr8k_466
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (365, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.722 seconds.
+[BENCHMARK] Total enhancement took 0.722 seconds.
+    fast_x2: "person, competes in the event." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (365, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.945 seconds.
+[BENCHMARK] Total enhancement took 0.945 seconds.
+    sharp_anime_x4: "a girl in a red shirt and white shirt is talking on a cell phone" (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (365, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.798 seconds.
+[BENCHMARK] Total enhancement took 2.798 seconds.
+    general_x4plus: "a girl in a red suit" (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (365, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.802 seconds.
+[BENCHMARK] Total enhancement took 2.802 seconds.
+    auto_vehicle_x4: "a girl in a red suit" (3.4s)
+[captioning] (46/60) jxie_flickr8k_789
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.740 seconds.
+[BENCHMARK] Total enhancement took 0.740 seconds.
+    fast_x2: "a man rowing a boat on the water." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.968 seconds.
+[BENCHMARK] Total enhancement took 0.968 seconds.
+    sharp_anime_x4: "a man rowing a boat on the water." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.862 seconds.
+[BENCHMARK] Total enhancement took 2.862 seconds.
+    general_x4plus: "a man rowing a boat on the water." (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.866 seconds.
+[BENCHMARK] Total enhancement took 2.866 seconds.
+    auto_vehicle_x4: "a man rowing a boat on the water." (3.4s)
+[captioning] (47/60) jxie_flickr8k_174
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.649 seconds.
+[BENCHMARK] Total enhancement took 0.649 seconds.
+    fast_x2: "a father carries his daughter in the street" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.863 seconds.
+[BENCHMARK] Total enhancement took 0.863 seconds.
+    sharp_anime_x4: "a little girl walking down the street in the city" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.552 seconds.
+[BENCHMARK] Total enhancement took 2.552 seconds.
+    general_x4plus: "a father carries his daughter on his shoulders" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.553 seconds.
+[BENCHMARK] Total enhancement took 2.553 seconds.
+    auto_vehicle_x4: "a father carries his daughter on his shoulders" (3.1s)
+[captioning] (48/60) jxie_flickr8k_150
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (400, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.780 seconds.
+[BENCHMARK] Total enhancement took 0.780 seconds.
+    fast_x2: "a dog jumping over a white and red obstacle." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (400, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 1.028 seconds.
+[BENCHMARK] Total enhancement took 1.028 seconds.
+    sharp_anime_x4: "a brown dog jumping over a white fence." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (400, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 3.053 seconds.
+[BENCHMARK] Total enhancement took 3.053 seconds.
+    general_x4plus: "a dog jumping over a white and red obstacle." (3.6s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (400, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 3.054 seconds.
+[BENCHMARK] Total enhancement took 3.054 seconds.
+    auto_vehicle_x4: "a dog jumping over a white and red obstacle." (3.6s)
+[captioning] (49/60) jxie_flickr8k_741
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (320, 480, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.596 seconds.
+[BENCHMARK] Total enhancement took 0.596 seconds.
+    fast_x2: "a man and woman smiling for the camera." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (320, 480, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.799 seconds.
+[BENCHMARK] Total enhancement took 0.799 seconds.
+    sharp_anime_x4: "a man and a woman smiling." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (320, 480, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.366 seconds.
+[BENCHMARK] Total enhancement took 2.366 seconds.
+    general_x4plus: "a man and woman smiling for the camera." (3.0s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (320, 480, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.364 seconds.
+[BENCHMARK] Total enhancement took 2.364 seconds.
+    auto_vehicle_x4: "a man and woman smiling for the camera." (2.9s)
+[captioning] (50/60) jxie_flickr8k_113
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.739 seconds.
+[BENCHMARK] Total enhancement took 0.739 seconds.
+    fast_x2: "two dogs playing with each other." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.975 seconds.
+[BENCHMARK] Total enhancement took 0.975 seconds.
+    sharp_anime_x4: "two dogs playing with each other." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.867 seconds.
+[BENCHMARK] Total enhancement took 2.867 seconds.
+    general_x4plus: "two dogs playing with each other." (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.869 seconds.
+[BENCHMARK] Total enhancement took 2.869 seconds.
+    auto_vehicle_x4: "two dogs playing with each other." (3.4s)
+[captioning] (51/60) jxie_flickr8k_428
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.740 seconds.
+[BENCHMARK] Total enhancement took 0.740 seconds.
+    fast_x2: "a dog walking across a log in the water." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.977 seconds.
+[BENCHMARK] Total enhancement took 0.978 seconds.
+    sharp_anime_x4: "a dog walking across a river." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.871 seconds.
+[BENCHMARK] Total enhancement took 2.871 seconds.
+    general_x4plus: "a dog walking across a river." (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.870 seconds.
+[BENCHMARK] Total enhancement took 2.870 seconds.
+    auto_vehicle_x4: "a dog walking across a river." (3.4s)
+[captioning] (52/60) jxie_flickr8k_965
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.650 seconds.
+[BENCHMARK] Total enhancement took 0.650 seconds.
+    fast_x2: "a dog and a person" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.858 seconds.
+[BENCHMARK] Total enhancement took 0.858 seconds.
+    sharp_anime_x4: "a dog and a person walking on a leash" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.546 seconds.
+[BENCHMARK] Total enhancement took 2.546 seconds.
+    general_x4plus: "a dog and a person" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.547 seconds.
+[BENCHMARK] Total enhancement took 2.547 seconds.
+    auto_vehicle_x4: "a dog and a person" (3.1s)
+[captioning] (53/60) jxie_flickr8k_18
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (296, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.587 seconds.
+[BENCHMARK] Total enhancement took 0.587 seconds.
+    fast_x2: "two dogs playing in a field." (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (296, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.763 seconds.
+[BENCHMARK] Total enhancement took 0.763 seconds.
+    sharp_anime_x4: "two dogs running in a field." (1.0s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (296, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.265 seconds.
+[BENCHMARK] Total enhancement took 2.265 seconds.
+    general_x4plus: "two dogs playing in a field." (2.8s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (296, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.261 seconds.
+[BENCHMARK] Total enhancement took 2.261 seconds.
+    auto_vehicle_x4: "two dogs playing in a field." (2.8s)
+[captioning] (54/60) jxie_flickr8k_189
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (426, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 0.895 seconds.
+[BENCHMARK] Total enhancement took 0.895 seconds.
+    fast_x2: "black dogs running in a field" (1.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (426, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 1.165 seconds.
+[BENCHMARK] Total enhancement took 1.165 seconds.
+    sharp_anime_x4: "black dogs running in a field" (1.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (426, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 3.451 seconds.
+[BENCHMARK] Total enhancement took 3.451 seconds.
+    general_x4plus: "black dogs running in a field" (4.0s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (426, 500, 3)
+	Tile 1/4
+	Tile 2/4
+	Tile 3/4
+	Tile 4/4
+[BENCHMARK] RealESRGAN took 3.454 seconds.
+[BENCHMARK] Total enhancement took 3.454 seconds.
+    auto_vehicle_x4: "black dogs running in a field" (4.0s)
+[captioning] (55/60) jxie_flickr8k_414
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 361, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.718 seconds.
+[BENCHMARK] Total enhancement took 0.718 seconds.
+    fast_x2: "a man standing next to a sign" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 361, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.939 seconds.
+[BENCHMARK] Total enhancement took 0.939 seconds.
+    sharp_anime_x4: "a man standing next to a sign" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 361, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.783 seconds.
+[BENCHMARK] Total enhancement took 2.783 seconds.
+    general_x4plus: "a man standing next to a sign" (3.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 361, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.792 seconds.
+[BENCHMARK] Total enhancement took 2.792 seconds.
+    auto_vehicle_x4: "a man standing next to a sign" (3.3s)
+[captioning] (56/60) jxie_flickr8k_589
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.739 seconds.
+[BENCHMARK] Total enhancement took 0.739 seconds.
+    fast_x2: "a little boy playing in the sand at the beach" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.965 seconds.
+[BENCHMARK] Total enhancement took 0.965 seconds.
+    sharp_anime_x4: "a little boy playing in the sand at sunset" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.861 seconds.
+[BENCHMARK] Total enhancement took 2.861 seconds.
+    general_x4plus: "a little boy playing in the sand at the beach" (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.868 seconds.
+[BENCHMARK] Total enhancement took 2.868 seconds.
+    auto_vehicle_x4: "a little boy playing in the sand at the beach" (3.4s)
+[captioning] (57/60) jxie_flickr8k_666
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 376, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.725 seconds.
+[BENCHMARK] Total enhancement took 0.725 seconds.
+    fast_x2: "a dog jumping over a fence" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 376, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.982 seconds.
+[BENCHMARK] Total enhancement took 0.982 seconds.
+    sharp_anime_x4: "a dog jumping over a fence." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 376, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.929 seconds.
+[BENCHMARK] Total enhancement took 2.929 seconds.
+    general_x4plus: "a dog jumping over a fence" (3.5s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 376, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.928 seconds.
+[BENCHMARK] Total enhancement took 2.928 seconds.
+    auto_vehicle_x4: "a dog jumping over a fence" (3.5s)
+[captioning] (58/60) jxie_flickr8k_763
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.647 seconds.
+[BENCHMARK] Total enhancement took 0.647 seconds.
+    fast_x2: "a dog jumping in the air to catch a frisbee." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.859 seconds.
+[BENCHMARK] Total enhancement took 0.859 seconds.
+    sharp_anime_x4: "a dog jumping in the air" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.552 seconds.
+[BENCHMARK] Total enhancement took 2.552 seconds.
+    general_x4plus: "a dog jumping in the air" (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (333, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.550 seconds.
+[BENCHMARK] Total enhancement took 2.550 seconds.
+    auto_vehicle_x4: "a dog jumping in the air" (3.1s)
+[captioning] (59/60) jxie_flickr8k_221
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 329, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.657 seconds.
+[BENCHMARK] Total enhancement took 0.657 seconds.
+    fast_x2: "a man and a woman walking down a street." (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 329, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.859 seconds.
+[BENCHMARK] Total enhancement took 0.859 seconds.
+    sharp_anime_x4: "a street with a man and woman walking by a flag" (1.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 329, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.541 seconds.
+[BENCHMARK] Total enhancement took 2.541 seconds.
+    general_x4plus: "a street with a flag flying over the city." (3.1s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (500, 329, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.544 seconds.
+[BENCHMARK] Total enhancement took 2.544 seconds.
+    auto_vehicle_x4: "a street with a flag flying over the city." (3.1s)
+[captioning] (60/60) jxie_flickr8k_586
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.739 seconds.
+[BENCHMARK] Total enhancement took 0.739 seconds.
+    fast_x2: "a man walking a dog on a trail" (1.2s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.966 seconds.
+[BENCHMARK] Total enhancement took 0.966 seconds.
+    sharp_anime_x4: "a man walking a dog on a dirt road." (1.3s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.861 seconds.
+[BENCHMARK] Total enhancement took 2.861 seconds.
+    general_x4plus: "a man walking a dog on a dirt road" (3.4s)
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (375, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.870 seconds.
+[BENCHMARK] Total enhancement took 2.870 seconds.
+    auto_vehicle_x4: "a man walking a dog on a dirt road" (3.4s)
+[captioning] scoring method=original on 60 images
+[captioning] scoring method=fast_x2 on 60 images
+[captioning] scoring method=sharp_anime_x4 on 60 images
+[captioning] scoring method=general_x4plus on 60 images
+[captioning] scoring method=auto_vehicle_x4 on 60 images
+[captioning] wrote /home/aadit/Projects/C4PS/evaluation/results/captioning_metrics.csv
+  original         n= 60  BLEU-4=0.2411  METEOR=0.4205  ROUGE-L=0.5824  CIDEr=0.6359
+  fast_x2          n= 60  BLEU-4=0.2226  METEOR=0.4169  ROUGE-L=0.5627  CIDEr=0.6478
+  sharp_anime_x4   n= 60  BLEU-4=0.2269  METEOR=0.4214  ROUGE-L=0.5673  CIDEr=0.6222
+  general_x4plus   n= 60  BLEU-4=0.2332  METEOR=0.4377  ROUGE-L=0.5706  CIDEr=0.6508
+  auto_vehicle_x4  n= 60  BLEU-4=0.2332  METEOR=0.4377  ROUGE-L=0.5706  CIDEr=0.6508

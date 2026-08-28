@@ -33,8 +33,33 @@ MODELS_CONFIG = {
             'scale': 4
         },
         'outscale': 4
-    }
+    },
+    'sharp_anime': {
+        # Real-ESRGAN's official anime-optimized checkpoint (6-block RRDBNet,
+        # trained for flatter/sharper illustrated content). Previously this
+        # mode had no entry here, so main.py's "Sharp (Vehicles/Anime)" menu
+        # option silently fell through the MODELS_CONFIG.get(mode, general)
+        # default and ran the general x4plus model instead -- i.e. it was
+        # never actually distinct from 'general'.
+        'weight_file': 'RealESRGAN_x4plus_anime_6B.pth',
+        'load_mode': 'checkpoint',
+        'model_params': {
+            'num_in_ch': 3,
+            'num_out_ch': 3,
+            'num_feat': 64,
+            'num_block': 6,
+            'num_grow_ch': 32,
+            'scale': 4
+        },
+        'outscale': 4
+    },
+    # 'auto_vehicle' has no distinct trained checkpoint of its own -- it
+    # intentionally reuses the general x4plus model until/unless a
+    # vehicle-specific model is trained. Left as an explicit alias (rather
+    # than relying on MODELS_CONFIG.get(mode, general)'s silent fallback)
+    # so this is a documented decision, not indistinguishable from a bug.
 }
+MODELS_CONFIG['auto_vehicle'] = MODELS_CONFIG['general']
 
 
 def enhance_image(image_path, mode, tile_size, face_enhance=False, enhance_faces=None):

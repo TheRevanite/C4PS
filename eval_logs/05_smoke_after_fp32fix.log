@@ -1,0 +1,46 @@
+[dataset] Trying Flickr8k source: jxie/flickr8k
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[dataset] Loaded jxie/flickr8k[test] with 1000 rows, columns=['image', 'caption_0', 'caption_1', 'caption_2', 'caption_3', 'caption_4']
+[dataset] Using 1 Flickr8k samples from jxie/flickr8k[test]
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+refs: ['A man on a motorized bike rides across a dirt road .', 'A man rides a pinkish motorbike on a hill .']
+Loading weights:   0%|          | 0/305 [00:00<?, ?it/s]Loading weights: 100%|██████████| 305/305 [00:00<00:00, 25909.12it/s]
+caption(original): a person riding a dirt bike on a dirt track.
+[DEBUG] Attempting to import GFPGAN...
+[DEBUG] GFPGAN imported successfully!
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x2_chk.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x2_chk.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.665 seconds.
+[BENCHMARK] Total enhancement took 0.665 seconds.
+fast -> a man riding a dirt bike on a dirt track. (1.3s) size= (1000, 668) mean= 82.2219001996008
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus_anime_6B.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus_anime_6B.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 0.857 seconds.
+[BENCHMARK] Total enhancement took 0.857 seconds.
+sharp_anime -> a man riding a motorcycle on a dirt track. (1.1s) size= (2000, 1336) mean= 82.46877270459082
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.513 seconds.
+[BENCHMARK] Total enhancement took 2.513 seconds.
+general -> a man riding a dirt bike on a dirt road. (3.1s) size= (2000, 1336) mean= 81.89279728043913
+[INFO] Using CHECKPOINT model path (RealESRGANer): weights/RealESRGAN_x4plus.pth
+[INFO] Initializing model from checkpoint: weights/RealESRGAN_x4plus.pth
+[ENHANCEMENT] Requested tile size: 400 (RAM safety check disabled)
+[ENHANCEMENT] Input image shape: (334, 500, 3)
+	Tile 1/2
+	Tile 2/2
+[BENCHMARK] RealESRGAN took 2.518 seconds.
+[BENCHMARK] Total enhancement took 2.518 seconds.
+auto_vehicle -> a man riding a dirt bike on a dirt road. (3.1s) size= (2000, 1336) mean= 81.89279728043913

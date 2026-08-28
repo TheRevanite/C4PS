@@ -1,0 +1,17 @@
++ curl -sL -o weights/RealESRGAN_x4plus.pth https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth
++ curl -sL -o weights/RealESRGAN_x2.pth https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth
++ curl -sL -o weights/RealESRGAN_x4plus_anime_6B.pth https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth
++ curl -sL -o weights/GFPGANv1.4.pth https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth
++ echo ALL_WEIGHTS_DOWNLOADED
+ALL_WEIGHTS_DOWNLOADED
++ ls -la weights/
+total 554456
+drwxrwxr-x  4 aadit aadit      4096 Aug 28 01:11 .
+drwxrwxr-x 15 aadit aadit      4096 Aug 28 01:04 ..
+-rw-rw-r--  1 aadit aadit 348632874 Aug 28 01:12 GFPGANv1.4.pth
+drwxrwxr-x  3 aadit aadit      4096 Aug 28 01:04 hf
+-rw-rw-r--  1 aadit aadit  67061725 Aug 28 01:11 RealESRGAN_x2_chk.pth
+-rw-rw-r--  1 aadit aadit  67061725 Aug 28 01:11 RealESRGAN_x2.pth
+-rw-rw-r--  1 aadit aadit  17938799 Aug 28 01:11 RealESRGAN_x4plus_anime_6B.pth
+-rw-rw-r--  1 aadit aadit  67040989 Aug 28 01:11 RealESRGAN_x4plus.pth
+drwxrwxr-x  4 aadit aadit      4096 Aug 28 01:04 transformer_model_cache

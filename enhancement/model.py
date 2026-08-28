@@ -69,7 +69,17 @@ class EnhancementModel:
         print(f"[INFO] Initializing model from checkpoint: {model_path}")
         model = RRDBNet(**model_params)
 
-        use_half = self.device.type == 'cuda'
+        # Empirically, half=True silently produces an all-zero (black) output
+        # array on at least this GPU/driver/torch/cudnn combination (GTX
+        # 1650, driver 550, torch 2.6+cu124) -- no exception, no NaN, the
+        # RRDBNet forward pass just underflows to zero. Confirmed by
+        # comparing half=True vs half=False on an identical input: only
+        # half=False produced a non-degenerate image. Since a silently wrong
+        # image is far worse than a slower correct one, half precision is
+        # disabled unconditionally here rather than auto-enabled for any
+        # CUDA device. Re-enable only after verifying non-zero output on the
+        # target GPU.
+        use_half = False
         if self.device.type == 'mps':
             print("[INFO] Using MPS (Apple Silicon) device. Half precision is not supported on MPS; using full precision.")
 
@@ -176,7 +186,7 @@ class EnhancementModel:
                         tile=current_tile,
                         tile_pad=10,
                         pre_pad=0,
-                        half=False if self.device.type == 'mps' else (self.device.type == 'cuda'),
+                        half=False,  # see note above __init__'s use_half -- half=True silently zeroes output here
                         gpu_id=0 if self.device.type == 'cuda' else None,
                     )
                     print(f"[INFO] Retrying RealESRGAN with smaller tile: {current_tile}")

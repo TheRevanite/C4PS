@@ -1,0 +1,7 @@
+{
+  "source": "jxie/flickr8k",
+  "split": "train",
+  "n_requested": 2,
+  "n_used": 2,
+  "seed": 12387
+}

@@ -1,0 +1,22 @@
+[dataset] Trying Flickr8k source: jxie/flickr8k
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[dataset] Loaded jxie/flickr8k[test] with 1000 rows, columns=['image', 'caption_0', 'caption_1', 'caption_2', 'caption_3', 'caption_4']
+[dataset] Using 1 Flickr8k samples from jxie/flickr8k[test]
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+refs: ['A man on a motorized bike rides across a dirt road .', 'A man rides a pinkish motorbike on a hill .']
+Loading weights:   0%|          | 0/305 [00:00<?, ?it/s]Loading weights: 100%|██████████| 305/305 [00:00<00:00, 30815.21it/s]
+caption(original): a person riding a dirt bike on a dirt track.
+[DEBUG] Attempting to import GFPGAN...
+[DEBUG] GFPGAN imported successfully!
+[ERROR] Weight file not found: weights/RealESRGAN_x2_chk.pth
+[INFO] Did you run 'python3 convert_weights.py'?
+fast -> a person riding a dirt bike on a dirt track. (0.1s)
+[ERROR] Weight file not found: weights/RealESRGAN_x4plus.pth
+[INFO] Did you run 'python3 convert_weights.py'?
+sharp_anime -> a person riding a dirt bike on a dirt track. (0.1s)
+[ERROR] Weight file not found: weights/RealESRGAN_x4plus.pth
+[INFO] Did you run 'python3 convert_weights.py'?
+general -> a person riding a dirt bike on a dirt track. (0.1s)
+[ERROR] Weight file not found: weights/RealESRGAN_x4plus.pth
+[INFO] Did you run 'python3 convert_weights.py'?
+auto_vehicle -> a person riding a dirt bike on a dirt track. (0.1s)
